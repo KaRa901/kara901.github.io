@@ -1,0 +1,204 @@
+/* Tollhaus background image */
+body {
+
+  font-family: 'Lato', sans-serif;
+}
+.bgimage {
+    height:100vh;
+    background: url('Pics/Noah_Angstr.png');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bgvideo_liebesfreaks {
+    height:100vh;
+    background-image: url('Media/Hendrik_Short_Exp_1_noblack.mp4');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*
+  .liebesfreaks_img{
+    height:100vh;
+    background: url('Pics/Herz 2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }*/
+  .navbar-container{
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    padding: 0 20px;
+  }
+
+  .topnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+/* Desktop code */
+  @media only screen and (min-width: 520px) {
+    .navbar-container{
+      width: auto;
+    }
+
+    .topnav{
+      column-gap: 20px
+    }
+
+}
+
+  .topnav a{
+    color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topnav a:hover{
+    color: white;
+  }
+
+  .header-container{
+    /*position: absolute;
+    max-width: 100%;
+    margin-top: 35vh;
+    margin-left: 35vw;*/
+    flex:1;
+    display: grid;
+    place-items: center;
+    margin-top: -5%;
+
+  }
+  .project_container{
+    /*position: absolute;
+    max-width: 100%;
+    margin-top: 35vh;
+    margin-left: 35vw;*/
+    flex:1;
+    display: grid;
+    place-items: center;
+    margin-top: -5%;
+
+  }
+
+  .hero_title{
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 36pt;
+    padding: 20px 40px;
+    font-variant: small-caps;
+    opacity: 80%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  }
+
+/*Projects_page*/
+.project_title{
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 70pt;
+  padding: 20px 40px;
+  font-variant: small-caps;
+  opacity: 80%;
+  margin-top: 10%;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.project_main {
+  flex: 1;
+  display: grid;
+  height: 700px;
+  width: 1000px;
+  background: rgba(204, 204, 204, 0.2);
+  border-radius: 20%;
+  margin-top: 10%;
+}
+
+#serial_description {
+  display: flex;
+  position: fixed;
+  color: white;
+  font-size: 18pt;
+  margin-left: 17%;
+  margin-right: 10%;
+  margin-top:15%;
+
+}
+
+button {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  opacity: 50%;
+  font-size: 10pt;
+  margin-left: 43%;
+  margin-top: 24%;
+  border-style: hidden;
+
+}
+
+button:focus, button:hover {
+  opacity: 1;
+  color: white;
+}
+
+/*contact*/
+
+/*footer*/
+
+.footer {
+display: flex;
+color: #fff;
+padding: 20px;
+
+  column-gap: 12px
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+.fa:focus, .fa:hover {
+  opacity: 1;
+  color: white;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
