@@ -1,0 +1,218 @@
+/* Tollhaus background image */
+body {
+
+  font-family: 'Lato', sans-serif;
+}
+.bgimage {
+    height:100vh;
+    background: url('/Pics/NoHuman.jpeg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.bgimage2 {
+    height:100vh;
+    background: url('/Pics/About.png');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  .bgvideo_liebesfreaks {
+    height:100vh;
+    background-image: url('Media/Hendrik_Short_Exp_1_noblack.mp4');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*
+  .liebesfreaks_img{
+    height:100vh;
+    background: url('Pics/Herz 2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position:relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }*/
+  .navbar-container{
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    padding: 0 20px;
+  }
+
+  .topnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+/* Desktop code */
+  @media only screen and (min-width: 520px) {
+    .navbar-container{
+      width: auto;
+    }
+
+    .topnav{
+      column-gap: 20px
+    }
+
+}
+
+  .topnav a{
+    color: rgba(0, 0, 0, 0.737);
+    font-family: 'Lato', sans-serif;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .topnav a:hover{
+    color: white;
+  }
+
+  .header-container{
+    /*position: absolute;
+    max-width: 100%;
+    margin-top: 35vh;
+    margin-left: 35vw;*/
+    flex:1;
+    display: grid;
+    place-items: center;
+    margin-top: -5%;
+
+  }
+  .project_container{
+    /*position: absolute;
+    max-width: 100%;
+    margin-top: 35vh;
+    margin-left: 35vw;*/
+    flex:1;
+    display: grid;
+    place-items: center;
+    margin-top: -5%;
+
+  }
+
+  .hero_title{
+    color: rgba(0, 0, 0, 0.733);
+    text-align: center;
+    font-size: 36pt;
+    padding: 20px 40px;
+    font-variant: small-caps;
+    opacity: 80%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  }
+
+/*Projects_page*/
+.projects-container{
+  flex: auto;
+  position: relative;
+  padding: 40px 10px 40px 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.projects-title{
+margin-bottom: 100px;
+}
+
+.projects_paragraph{
+font-size: 12px;
+}
+
+/* about */
+.about-container{
+    flex: auto;
+    position: relative;
+    padding: 70px 10px 70px 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+.about-title{
+  margin-bottom: 20px;
+}
+
+.about_paragraph{
+  font-size: 12px;
+}
+
+/*contact*/
+
+.contact-container{
+  flex: auto;
+  position: relative;
+  padding: 70px 10px 70px 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.contact-title{
+margin-bottom: 40px;
+}
+
+.contact_paragraph{
+font-size: 12px;
+}
+
+/*footer*/
+
+.footer {
+margin-bottom: 20px;
+display: flex;
+color: rgba(0, 0, 0, 0.721);
+font-weight: 400;
+font-size: 18px;
+padding: 25px;
+height: 100px;
+text-align: center;
+display: flex;
+align-items: center;
+
+
+column-gap: 50px
+}
+
+.fa {
+  padding-top: 15px;
+  font-size: 100px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+.fa:focus, .fa:hover {
+  opacity: 1;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
