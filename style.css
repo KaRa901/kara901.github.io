@@ -13,9 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
 .bgimage2 {
-    height:100vh;
+    height: 90em;
     background: url('/Pics/About.png');
     background-size: cover;
     background-position: center;
@@ -24,32 +25,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
-  .bgvideo_liebesfreaks {
-    height:100vh;
-    background-image: url('Media/Hendrik_Short_Exp_1_noblack.mp4');
-    background-size: cover;
-    background-position: center;
-    position:relative;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /*
-  .liebesfreaks_img{
-    height:100vh;
-    background: url('Pics/Herz 2.jpg');
-    background-size: cover;
-    background-position: bottom;
-    position:relative;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }*/
   .navbar-container{
     position: sticky;
     width: 100%;
@@ -158,6 +137,29 @@ font-size: 12px;
   font-size: 12px;
 }
 
+.Image_grid{
+  display: grid;
+  flex: auto;
+  grid-template-columns: repeat(auto-fill)
+}
+
+.Picture_1{
+  width: 10px;
+  grid-column: 1;
+}
+
+.Picture_2{
+  margin-left: 25em;
+  grid-column: 2;
+}
+
+img {
+  height: auto;
+  width: 350px;
+  object-fit: cover;
+
+}
+
 /*contact*/
 
 .contact-container{
@@ -173,7 +175,7 @@ margin-bottom: 40px;
 }
 
 .contact_paragraph{
-font-size: 14px;
+font-size: 12px;
 }
 
 /*footer*/
