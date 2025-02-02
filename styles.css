@@ -1,0 +1,347 @@
+/*body*/
+/*-------------------------------------*/
+
+.body {
+  background-color: #fbecec;;
+  font-family: 'Lato', sans-serif;
+}
+
+/*background-color: #fbecec;*/
+
+/*header*/
+/*-------------------------------------*/
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #fbecec;;
+  padding: 20px 50px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12.45px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: rgb(124, 123, 123);
+}
+
+/* Style the active/current link
+.header a.active {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}*/
+
+/* Float the link section to the right */
+.header_right {
+  float: inline-end;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-top: 6px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #000000;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+
+/*Grid Code HOME PAGE*/
+/*--------------------------------------------*/
+
+/* Tile container (grid) styling */
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  padding: 40px 40px 90px 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Each tile styling */
+.tile {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tile hover effect */
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tile content inside the anchor tag */
+.tile a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image styling */
+.tile img {
+  width: 100%;
+  height: auto;
+  display: vlock;
+}
+
+/* Tile description text */
+.tile-info {
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Optional: Change hover color of text */
+.tile-info:hover {
+  background-color: #e0e0e0;
+}
+
+
+/*Desktop Code*/
+/*--------------------------------------------*/
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 700px) {
+  .header a.logo {
+    float: none;
+    display: inline;
+    text-align: left;
+  }
+  .header_right {
+    float: none;
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    float: right;
+    align-content: center;
+  }
+  .fa fa-github{
+    display: none;
+  }
+  .topnav.active {
+    display:flex;
+  }
+
+}
+
+/*Main Pages*/
+/*----------------------------------------------*/
+
+/*Main*/
+.main{
+  background-image: url("Images/Pics/NoHuman.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  float: flex;
+  padding: 50% 30%; 
+}
+
+.main h4{
+  font-size: 200%;
+  text-align: center; 
+}
+
+
+/*Contact*/
+
+.main_contact{
+  display: block;
+  float: flex;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 18px;
+}
+
+.main_contact h4{
+  font-size: 22px;
+}
+
+.main_contact a{
+  text-decoration: none;
+  color: rgb(199, 132, 93);
+}
+
+/*Bio*/
+
+.main_bio {
+  display: block;
+  float: flex;
+  padding: 4% 10% 10% 10%;
+}
+
+.main_bio h4{
+  text-align: center;
+}
+
+.bio_pic {
+  padding-top:3%;
+  height: auto;
+  width: 100%;
+}
+
+.main_bio a{
+  text-decoration: none;
+  color: rgb(199, 132, 93);
+}
+
+.main_bio h6{
+  text-align: center;
+}
+
+.main_bio ul{
+  list-style-type: none;
+  padding: 0% 10% 0% 10%
+}
+
+
+/*Video*/
+
+.main_video{
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.sub_column{
+  display: inline-block;
+  padding: 20%;
+  vertical-align: middle;
+  border: 1px solid red;
+}
+
+.vimeo{
+  padding:50% 0 0 0;
+
+}
+
+/*Photography*/
+/*---------------------------------------------------------------*/
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+/*
+.gallery-frame {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #333;
+  color: #d9d9d9;
+}*/
+
+/* The Images */
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: .7;
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+  opacity: .7;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/*Writing*/
+
+/*Sales*/
+
+/*Impressum*/
+
+.main_impressum{
+  display: block;
+  padding: 5% 20% 20% 20%;
+}
+
+/*Footer*/
+/*----------------------------------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fbecec;;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: larger;
+}
+
+.footer a{
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover{
+  color: rgb(124, 123, 123);
+}
